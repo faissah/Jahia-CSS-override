@@ -21,8 +21,10 @@ public class CssOverrideFilter extends AbstractFilter {
 
     private static final Logger logger = LoggerFactory.getLogger(CssOverrideFilter.class);
 
+    private static final String MODULE_NAME = "Jahia-CSS-override";
+
     // The override CSS path served from this module's src/main/resources/css/variables.css
-    private static final String OVERRIDE_CSS_PATH = "/modules/Jahia-CSS-override/css/variables.css";
+    private static final String OVERRIDE_CSS_PATH = "/modules/" + MODULE_NAME + "/css/variables.css";
 
     private static final String LINK_TAG =
             "<jahia:resource type=\"css\" path=\"" + OVERRIDE_CSS_PATH.replace("/", "%2F") + "\"" +
@@ -39,6 +41,10 @@ public class CssOverrideFilter extends AbstractFilter {
     public String execute(String previousOut, RenderContext renderContext, Resource resource, RenderChain chain) throws Exception {
         // Let the full render chain complete first so we have the final HTML
         String out = super.execute(previousOut, renderContext, resource, chain);
+
+        if (!renderContext.getSite().getInstalledModules().contains(MODULE_NAME)) {
+            return out;
+        }
 
         if (out != null) {
             int headClose = out.indexOf("</head>");
