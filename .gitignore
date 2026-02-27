@@ -13,3 +13,7 @@ target
 
 # Jahia DX Studio
 repository.xml.generated
+
+# OS / IDE
+.DS_Store
+.vscode
