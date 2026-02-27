@@ -1,0 +1,108 @@
+/*
+ * Override of luxe-jahia-demo variables.css
+ * Original: https://github.com/Jahia/luxe-jahia-demo/blob/main/packages/template-set/src/templates/css/variables.css
+ *
+ * Modify the values below to customize the design tokens for the template set.
+ */
+
+/* ── Responsive grid breakpoints ───────────────────────────────────────────── */
+@value gridBreakpoints_xs: 0;
+@value gridBreakpoints_sm: 576px;
+@value gridBreakpoints_md: 768px;
+@value gridBreakpoints_lg: 992px;
+@value gridBreakpoints_xl: 1200px;
+@value gridBreakpoints_xxl: 1400px;
+
+/* ── Spacing scale ──────────────────────────────────────────────────────────── */
+@value space_0:  0;
+@value space_1: .25rem;
+@value space_2: .5rem;
+@value space_3: 1rem;
+@value space_4: 1.5rem;
+@value space_5: 3rem;
+@value space_6: 5rem;
+
+/* ── Fluid typography scale ─────────────────────────────────────────────────── */
+@value fs_1: calc(1.375rem + 1.5vw);
+@value fs_2: calc(1.325rem + .9vw);
+@value fs_3: calc(1.3rem + .6vw);
+@value fs_4: calc(1.275rem + .3vw);
+@value fs_5: 1.25rem;
+@value fs_6: 1rem;
+@value fs_small: .875em;
+
+/* ── Color tokens ───────────────────────────────────────────────────────────── */
+:root {
+    /* Value tokens */
+    --luxe-font-family-display: "Comic Sans MS", cursive;
+    --luxe-font-family-base: "Comic Sans MS", cursive;
+    --luxe-color-gray: #f6f6f6;
+    --luxe-color-gold: #c0392b;
+    --luxe-color-darkBlue: #4a0f0f;
+    --luxe-color-darkBlue40: #b87878;
+    --luxe-color-darkBlue60: #8b4444;
+    --luxe-box-shadow: 4px 6px 17px 15px rgba(110, 20, 20, 0.1);
+
+    /* Semantic tokens */
+    --luxe-font-body: 400 1.25rem/1.75 var(--luxe-font-family-base);
+    --luxe-color-heading: var(--luxe-color-darkBlue);
+    --luxe-color-primary: var(--luxe-color-gold);
+    --luxe-color-secondary: var(--luxe-color-darkBlue60);
+    --luxe-bg-secondary: var(--luxe-color-gray);
+
+    /* Deep crimson replaces dark-blue */
+    --luxe-color-darkBlue-rgb: 74, 15, 15;
+    --luxe-color-darkBlue60: #8b4444;
+    --luxe-color-darkBlue60-rgb: 139, 68, 68;
+    --luxe-color-darkBlue40: #b87878;
+    /* Vivid red replaces gold */
+    --luxe-color-gold-rgb: 192, 57, 43;
+    --luxe-color-gray-rgb: 246, 246, 246;
+    --luxe-color-dark: #3d2020;
+    --luxe-color-dark-rgb: 61, 32, 32;
+    --luxe-color-primary-rgb: var(--luxe-color-gold-rgb);
+    --luxe-color-secondary: var(--luxe-color-darkBlue60);
+    --luxe-color-secondary-rgb: var(--luxe-color-darkBlue60-rgb);
+    --luxe-tertiary-color: rgba(230, 222, 222, 0.5);
+    --luxe-tertiary-color-rgb: 230, 222, 222;
+
+    --luxe-secondary: var(--luxe-color-secondary);
+    --luxe-secondary-rgb: var(--luxe-color-secondary-rgb);
+
+    --luxe-secondary-color: var(--luxe-color-darkBlue60);
+    --luxe-emphasis-color: var(--luxe-color-dark);
+    --luxe-emphasis-color-rgb: var(--luxe-color-dark-rgb);
+    --luxe-border-color: var(--luxe-color-darkBlue40);
+    --luxe-border-radius: 8px;
+    --luxe-secondary-bg-rgb: var(--luxe-color-gray-rgb);
+    --luxe-tertiary-bg: var(--luxe-color-gray);
+
+    --luxe-link-color: var(--luxe-color-primary);
+    --luxe-link-color-rgb: var(--luxe-primary-rgb);
+    --luxe-link-hover-color: rgb(154, 46, 34);
+    --luxe-link-hover-color-rgb: 154, 46, 34;
+
+    --luxe-body-color: var(--luxe-color-dark);
+
+    --luxe-dark-text-emphasis: #4a2020;
+    --luxe-dark-border-subtle: #c09090;
+    --luxe-dark-bg-subtle: var(--luxe-color-gray);
+    --luxe-warning-text-emphasis: rgb(180, 60, 10);
+    --luxe-warning-border-subtle: rgb(220, 90, 40);
+    --luxe-warning-bg-subtle: rgb(80, 20, 5);
+    --luxe-danger-text-emphasis: rgb(140, 15, 15);
+    --luxe-danger-bg-subtle: rgb(252, 215, 215);
+    --luxe-danger-border-subtle: rgb(240, 170, 170);
+
+    --luxe-border-width: 1px;
+
+    --luxe-body-bg: #fff;
+    --luxe-body-bg-rgb: 255, 255, 255;
+
+    --luxe-border-color-translucent: rgba(0, 0, 0, 0.175);
+
+    --luxe-border-radius-lg: 0.5rem;
+
+    --luxe-dialog-opacity: 0.4;
+    --map-border-radius: var(--luxe-border-radius);
+}
