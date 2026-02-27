@@ -8,8 +8,8 @@
 /* ── Color tokens ───────────────────────────────────────────────────────────── */
 :root {
     /* Value tokens */
-    --luxe-font-family-display: "Playfair Display Variable", serif;
-    --luxe-font-family-base: "Inter Variable", system-ui;
+    --luxe-font-family-display: "Comic Sans MS", cursive;
+    --luxe-font-family-base: "Comic Sans MS", cursive;
     --luxe-color-gray: #f6f6f6;
     --luxe-color-gold: #c0392b;
     --luxe-color-darkBlue: #4a0f0f;
